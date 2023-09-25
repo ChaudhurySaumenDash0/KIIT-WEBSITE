@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three Rows Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #menu {
+            background-color: #38e33d;
+            padding: 10px;
+        }
+        .tre {
+            height: 40px;
+            width: 5%;
+            float: right;
+        }
+        #menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        #menu li {
+            display: inline;
+            margin-right: 10px;
+        }
+        #menu li a {
+            text-decoration: none;
+            color: #ede8e8;
+            padding: 5px;
+        }
+
+        #main-content {
+            background-color: #f2f2f2;
+            height: 150px;
+            padding: 10px;
+           
+           
+        }
+        #main-content ul {
+            list-style-type: none;
+            margin: 0;
+           
+        }
+        #main-content li{
+            display: inline;
+            margin-right: 10px;
+           position: relative;
+           top: 50px;
+           padding: 10px;
+
+        }
+        #main-content li a:hover {
+            background-color: #a91717;
+           
+        }
+        #main-content li a {
+            text-decoration: none;
+            color: #322e2e;
+           
+            
+        }
+        .logo{
+            width: 20%;
+            height: 100%;
+            display: inline;
+            float: left;
+            
+        
+        
+        }
+        #menu li a:hover {
+            background-color: #333;
+           
+        }
+        .mid{
+            height: 280px; 
+            width: 500px;
+            padding: 0;
+        }
+        
+        #footer {
+            background-color: #555;
+            height: 300px;
+            padding: 10px;
+            color: #fff;
+            text-align: center;
+           
+        }
+        .wer{
+            background-color: blue;
+        }
+        #footer2 li{
+            display: inline;
+            margin-right: 10px;
+        }
+        #footer2 li a {
+            text-decoration: none;
+            color: #3aec08;
+            padding: 5px;
+        }
+        #footer2 a {
+            text-decoration: none;
+            color:#3c0bf0;
+        }
+        #footer2 {
+            background-color: #ef2e2e;
+            height: 80px;
+            padding: 0px;
+            color: #fff;
+            text-align: center;
+          
+            .div3{ background-color:green; height: 80px; width:1250px;}
+    .div31{ background-color: rgb(19, 179, 56); height:80px; width: 25%; float: left; padding: 10px;}
+    .div32{ background-color: rgb(12, 223, 170); height:80px; width: 25%; float: left;padding: 10px;}
+    .div33{ background-color: rgb(12, 206, 41); height:80px; width: 25%; float: left;padding: 10px;}
+    .div34{ background-color: rgb(28, 208, 136); height:80px; width: 25%; float: left;padding: 10px;}
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="menu" class=div1>
+        <ul>
+            <li><a href="https://kiit.ac.in/sap/">SAP Portal</a></li>
+            <li><a href="https://library.kiit.ac.in/?_gl=1%2Afbpn70%2A_ga%2AMzc5NTk0NTU1LjE2NjI2MTgyMDg.%2A_ga_34QZ5P9757%2AMTY4ODI2ODcxNi45LjEuMTY4ODI2ODk0My4wLjAuMA.." >Library</a></li>
+            <li><a href="https://kiit.ac.in/notices/">Notices</a></li>
+            <li><a href="https://alumni.kiit.ac.in/?_gl=1*1x9os7d*_ga*Mzc5NTk0NTU1LjE2NjI2MTgyMDg.*_ga_34QZ5P9757*MTY4ODI2ODcxNi45LjEuMTY4ODI2OTExOC4wLjAuMA..">Alumni</a></li>
+            <li><a href="https://kiit.ac.in/academics/faculty-kiit-university/">Staff</a></li>
+            <li><a href="https://kiit.ac.in/campuslife/sports/">Sports</a></li>
+            <li><a href="http://coe.kiit.ac.in/?_gl=1*1j5fx6u*_ga*Mzc5NTk0NTU1LjE2NjI2MTgyMDg.*_ga_34QZ5P9757*MTY4ODI2ODcxNi45LjEuMTY4ODI2OTQxMi4wLjAuMA..">Examination</a></li>
+            <li><a href="https://kiit.ac.in/training-placement/">Placement</a></li>
+            <li><a href="https://kiit.ac.in/career/">Careers</a></li>
+            <li><a href="https://achyutasamanta.com/">Founder</a></li>
+            <li><a href="https://kiit.ac.in/a-z-listing/">A-Z Index</a></li>
+            <li><a href="https://kiit.ac.in/brochure/">Brochure</a></li>
+            <li><a href="registrationform.html">KIITEE 2023</a></li>
+            <a href="#"><img class="tre"src="contact.jpg"></a><p>
+            <li class="wer"><a href="https://form.kiit.ac.in/payment/?_gl=1*1pelkdr*_ga*Mzc5NTk0NTU1LjE2NjI2MTgyMDg.*_ga_34QZ5P9757*MTY4ODI2ODcxNi45LjEuMTY4ODI2OTYxNC4wLjAuMA..">Fee Payment</a></li>
+
+        </ul>
+    </div>
+
+ 
+    <div id="main-content" class=div2>
+        <img class=logo src="logo.png">
+        <li><a href="#">About KIIT</a></li>
+        <li><a href="#">Academics</a></li>
+        <li><a href="#">Research</a></li>
+        <li><a href="#">News and events</a></li>
+        <li><a href="#">Explore KIIT</a></li>
+        <li><a href="#">Virtual Tour</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Admission</a></li>
+    
+       
+     
+    </div>
+    
+    
+
+    <div id="footer" class=div4>
+        <img class="mid" src="sampl.jpg">
+    </div>
+    <div id="footer2" class=div3>
+        <div class=div31>
+            <br>
+           <center><a href="https://kiit.ac.in"><font size="3">Kiit University</font></a></center>
+        </div>
+        <div class=div32>
+            <br>
+           <center> <a href="https://www.youtube.com/@KIIT_University"><font size="3">Youtube</font></a></center>
+        </div>
+        <div class=div33>
+            <br>
+           <center> <a href="https://kiit.ac.in/contact/"><font size="3">Contact Us</font></a></center>
+        </div>
+        <div class=div34>
+            <br>
+            <center> <a href="https://kiit.ac.in/about/administration/"><font size="3">Helpdesk</font></a></center>
+        </div>
+    </div>
+    <p><center>This Page is designed by Technologies</center></p>
+</body>
+</html>

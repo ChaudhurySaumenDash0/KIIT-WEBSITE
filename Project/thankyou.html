@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You!</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #064f2d;
+            background-image: url('logo.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        .thank-you-container {
+            max-width: 600px;
+            margin: 100px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            color: #008000;
+        }
+
+        p {
+            color: #444;
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .redirect-button {
+            background-color: #1010e2;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .redirect-button:hover {
+            background-color: #006400;
+        }
+    </style>
+</head>
+<body>
+    <div class="thank-you-container">
+        <h1>Thank You!</h1>
+        <p>Your form has been submitted successfully.</p>
+    </div>
+    <div class="button-container">
+        <button class="redirect-button" onclick="redirectToKiit()">Redirect to Website</button>
+    </div>
+
+    <script>
+        function redirectToKiit() {
+            window.location.href = "index.html";
+        }
+    </script>
+</body>
+</html>

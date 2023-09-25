@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Person Detail Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #68ffb9;
+      background-image: url('kiitimage.jpeg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    h1 {
+      text-align: center;
+      margin: auto;
+      width: 50%;
+      
+    }
+    form {
+      width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background-color: #f9f9f9;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    .log{
+      display: block;
+      float: left;
+      width: 25%;
+      height: 50%;
+      padding:0%;
+
+
+    }
+   
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+    }
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
+  </style>
+</head>
+<body>
+  
+    <marquee width="50%" direction=left height="100px">
+     <b> Application Open for KIITEE 2023</b>
+       </marquee>
+
+
+    
+  <img src="logo.png" class=log>
+  <h1><center style="color: rgb(162, 13, 231);">Application for KIITEE 2023</center></h1>
+ 
+  <form id="person-detail-form" action="registrationform.jsp" method="post">
+    <h2 ><centre style="color: blue;">Personal Details</centre></h2>
+    <label for="first-name">First Name:<span style="color: red;">*</span></label>
+    <input type="text" id="first-name" name="first_name" required>
+    <br>
+    <label for="last-name">Last Name:<span style="color: red;">*</span></label>
+    <input type="text" id="last-name" name="last_name" required>
+    <br>
+    <label for="email">Email:<span style="color: red;">*</span></label>
+    <input type="email" id="email" name="email" required>
+    <br>
+    <label for="phone">Phone:<span style="color: red;">*</span></label>
+    <input type="tel" id="phone" name="phone">
+    <br>
+    <br>
+    <label for="birthdate">Date of Birth:<span style="color: red;">*</span></label>
+    <input type="date" id="birthdate" name="birthdate" required>
+    <br>
+    <br>
+    <label for="gender">Gender:<span style="color: red;">*</span></label>
+    <select id="gender" name="gender" required>
+      <option value="">-- Select gender --</option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+    </select>
+    <br>
+    <label for="Father's Name">Father's Name:<span style="color: red;">*</span></label>
+    <input type="text" id="fname" name="fname" required>
+    <br>
+    <label for="mother-name">Mother's Name:<span style="color: red;">*</span></label>
+    <input type="text" id="mname" name="mname" required>
+    <br>
+    
+    <label for="address">Address:<span style="color: red;">*</span></label>
+    <textarea id="address" name="address" rows="4" required></textarea>
+    <br>
+    <label for="address">City:<span style="color: red;">*</span></label>
+    <textarea id="address1" name="address1" rows=1 required></textarea>
+    <br>
+    <label for="address">Pin:<span style="color: red;">*</span></label>
+    <textarea id="address2" name="address2" rows=1 required></textarea>
+    <br>
+    <label for="state">Select your state:<span style="color: red;">*</span></label>
+<select id="state" name="state" required>
+  <option value="">-- Select State --</option>
+  <option value="AP">Andhra Pradesh</option>
+  <option value="AR">Arunachal Pradesh</option>
+  <option value="AS">Assam</option>
+  <option value="BR">Bihar</option>
+  <option value="CT">Chhattisgarh</option>
+  <option value="GA">Goa</option>
+  <option value="GJ">Gujarat</option>
+  <option value="HR">Haryana</option>
+  <option value="HP">Himachal Pradesh</option>
+  <option value="JK">Jammu and Kashmir</option>
+  <option value="JH">Jharkhand</option>
+  <option value="KA">Karnataka</option>
+  <option value="KL">Kerala</option>
+  <option value="MP">Madhya Pradesh</option>
+  <option value="MH">Maharashtra</option>
+  <option value="MN">Manipur</option>
+  <option value="ML">Meghalaya</option>
+  <option value="MZ">Mizoram</option>
+  <option value="NL">Nagaland</option>
+  <option value="OR">Odisha</option>
+  <option value="PB">Punjab</option>
+  <option value="RJ">Rajasthan</option>
+  <option value="SK">Sikkim</option>
+  <option value="TN">Tamil Nadu</option>
+  <option value="TG">Telangana</option>
+  <option value="TR">Tripura</option>
+  <option value="UP">Uttar Pradesh</option>
+  <option value="UK">Uttarakhand</option>
+  <option value="WB">West Bengal</option>
+  <option value="AN">Andaman and Nicobar Islands</option>
+  <option value="CH">Chandigarh</option>
+  <option value="DN">Dadra and Nagar Haveli and Daman and Diu</option>
+  <option value="DL">Delhi</option>
+  <option value="LD">Lakshadweep</option>
+  <option value="PY">Puducherry</option>
+</select>
+<br>
+<label for="aadhar">Aadhar no:<span style="color: red;">*</span></label>
+<input type="number" id="aadhar" name="aadhar" required>
+<br>
+<br>
+<label for="reservation-category">Select reservation category:<span style="color: red;">*</span></label>
+<select id="rcategory" name="rcategory" required>
+  <option value="">-- Select Category --</option>
+  <option value="General">General</option>
+  <option value="OBC">Other Backward Class (OBC)</option>
+  <option value="SC">Scheduled Caste (SC)</option>
+  <option value="ST">Scheduled Tribe (ST)</option>
+  <option value="EWS">Economically Weaker Section (EWS)</option>
+</select>
+<h2 ><centre style="color: blue;">Qualification Details</centre></h2>
+      <label for="Qualification">Qualification:<span style="color: red;">*</span></label>
+      <select id="Qualification" name="Qualification" required>
+        <option value="">-- Select --</option>
+          <option value="10+2">10+2</option>
+          <option value="diploma">Diploma</option>
+      </select>
+    <br>
+    <br>
+    <label for="qualified">Name of the board(12th/Diploma):<span style="color: red;">*</span></label>
+    <input type="text" id="Quali" name="Quali" required>
+    <br>
+    <br>
+    <label for="Qualification">Percentage/CGPA:<span style="color: red;">*</span></label>
+    <input type="number" id="Qualificationn" name="Qualificationn" required>
+    <br>
+    <br>
+    <label for="upload-file">Upload Exam Certificate(10+2/Diploma):<span style="color: red;">*</span></label>
+    <input type="file" id="upload-files" name="file" accept=".pdf, .doc, .docx" required>
+    <br>
+    <br>
+    <label for="qualified">Name of the board(10th):<span style="color: red;">*</span></label>
+    <input type="text" id="Qualiii" name="Qualiii" required>
+    <br>
+    <label for="Qualification">Enter 10th Percentage/CGPA:<span style="color: red;">*</span></label>
+    <input type="number" id="Qualificationnn" name="Qualificationnn" required>
+    <br>
+    <br>
+    <label for="upload-file">Upload 10th marksheet:<span style="color: red;">*</span></label>
+    <input type="file" id="upload-file" name="file" accept=".pdf, .doc, .docx" required>
+    <br>
+    <br>
+  <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
